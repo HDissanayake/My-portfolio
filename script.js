@@ -1,7 +1,7 @@
 
 // Typing animation effect
 // =========================
-const roles = ["Frontend Developer","Software Developer"];
+const roles = ["Quality Assurance Engineer","Automation Tester", "QA Analyst"];
 let roleIndex = 0;
 let charIndex = 0;
 
@@ -48,7 +48,7 @@ if (contactForm) {
 
 
 // =========================
-// Responsive Hamburger Menu
+// Responsive Menu
 // =========================
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
