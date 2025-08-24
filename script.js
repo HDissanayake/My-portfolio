@@ -1,6 +1,6 @@
 // Typing animation effect
 // =========================
-const roles = ["Software Developer","Frontend Developer","Web Developer"];
+const roles = ["Software Developer","Web Developer"];
 let roleIndex = 0;
 let charIndex = 0;
 
