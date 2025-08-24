@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Header / Navbar -->
   <header>
     <nav>
-      <h2 class="logo">HD</h2>
-      <ul>
+      <h2 class="logo">Harshanee</h2>
+
+      <!-- Hamburger Toggle -->
+      <div id="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -26,15 +37,12 @@
     <div class="content">
       <h3>Hello, It's Me</h3>
       <h1>Harshanee Disanayake</h1>
-      <h3>And I'm a <span id="typing"></span></h3>
+      <h3>And I'm a Aspiring<span id="typing"></span></h3>
       <p>I am a passionate Software Developer skilled in building responsive web applications and creating user-friendly applications.</p><br><br>
       <a href="assets/Harshanee-Resume(Trainee Software Developer).pdf" download="Harshanee-Resume(Trainee Software Developer).pdf" class="resume-btn">Download Resume</a>
-
     </div>
     <div class="profile-pic">
       <img src="assets/My Photo.jpeg" alt="Profile Photo">
-
-      
     </div>
   </section>
 
@@ -46,121 +54,79 @@
        programming and UI design skills.</p>
   </section>
 
-<!-- Skills -->
-<section id="skills" class="skills-section">
-  <h2>My Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <i class="fa-brands fa-html5 skill-icon" style="color:#e34f26;"></i>
-      <p>HTML</p>
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fa-brands fa-html5 skill-icon" style="color:#e34f26;"></i><p>HTML</p></div>
+      <div class="skill-card"><i class="fa-brands fa-css3-alt skill-icon" style="color:#1572b6;"></i><p>CSS</p></div>
+      <div class="skill-card"><i class="fa-brands fa-js skill-icon" style="color:#f7df1e;"></i><p>JavaScript</p></div>
+      <div class="skill-card"><i class="fa-brands fa-react skill-icon" style="color:#61dafb;"></i><p>React</p></div>
+      <div class="skill-card"><i class="fa-brands fa-java skill-icon" style="color:#f89820;"></i><p>Java</p></div>
+      <div class="skill-card"><i class="fa-brands fa-php skill-icon" style="color:#777bb4;"></i><p>PHP</p></div>
+      <div class="skill-card"><i class="fa-solid fa-database skill-icon" style="color:#00618a;"></i><p>MySQL</p></div>
+      <div class="skill-card"><i class="fa-solid fa-leaf skill-icon" style="color:#47a248;"></i><p>MongoDB</p></div>
     </div>
-    <div class="skill-card">
-      <i class="fa-brands fa-css3-alt skill-icon" style="color:#1572b6;"></i>
-      <p>CSS</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-brands fa-js skill-icon" style="color:#f7df1e;"></i>
-      <p>JavaScript</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-brands fa-react skill-icon" style="color:#61dafb;"></i>
-      <p>React</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-brands fa-java skill-icon" style="color:#f89820;"></i>
-      <p>Java</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-brands fa-php skill-icon" style="color:#777bb4;"></i>
-      <p>PHP</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-solid fa-database skill-icon" style="color:#00618a;"></i>
-      <p>MySQL</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa-solid fa-leaf skill-icon" style="color:#47a248;"></i>
-      <p>MongoDB</p>
-    </div>
-    
-  </div>
-</section>
+  </section>
 
-<!-- Add Font Awesome CDN inside <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-<!-- Projects -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
-    <!-- Project 1 with multiple images -->
-    <div class="project-card">
-      <div class="project-images">
-        <img src="assets/dairy-1.jpg" alt="Dairy Pro Screenshot 1">
-        <img src="assets/dairy-2.jpg" alt="Dairy Pro Screenshot 2">
-        <img src="assets/dairy-3.jpg" alt="Dairy Pro Screenshot 3">
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-images">
+          <img src="assets/dairy-1.jpg" alt="Dairy Pro Screenshot 1">
+          <img src="assets/dairy-2.jpg" alt="Dairy Pro Screenshot 2">
+          <img src="assets/dairy-3.jpg" alt="Dairy Pro Screenshot 3">
+        </div>
+        <div class="project-content">
+          <h3>Dairy Pro Management System</h3>
+          <p>Technology & Tools: HTML, TailwindCSS, JavaScript, MERN Stack.<br>
+          A web application for managing dairy products, orders, and customers efficiently.</p>
+        </div>
       </div>
-      <div class="project-content">
-        <h3>Dairy Pro Management System</h3>
-        <p>Technology & Tools: HTML, TailwindCSS, JavaScript, MERN Stack.<br>
-        A web application for managing dairy products, orders, and customers efficiently. Built with the MERN 
-        Stack, it provides distinct features for both dairy managers and customers, simplifying product management,
-         order handling, and cash-on-delivery tracking
-        </p>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-images">
+          <img src="assets/spices1.jpg" alt="The Spices Aura Store 1">
+          <img src="assets/spices2.jpg" alt="The Spices Aura Store 2">
+          <img src="assets/spices3.jpg" alt="The Spices Aura Store 3">
+        </div>
+        <div class="project-content">
+          <h3>The Spices Aura Store</h3>
+          <p>Technology & Tools: HTML, CSS, PHP, MySQL. <br>An e-commerce website built for a spice store.</p>
+        </div>
       </div>
     </div>
-
-    <!-- Project 2 with single image -->
-    <div class="project-card">
-      <img src="assets/spices1.jpg" alt="The Spices Aura Store 1">
-       <img src="assets/spices2.jpg" alt="The Spices Aura Store 2">
-       <img src="assets/spices3.jpg" alt="The Spices Aura Store 3">
-
-      <div class="project-content">
-        <h3>The Spices Aura Store</h3>
-        <p>Technology & Tools: HTML, CSS, PHP, MySQL. <br>An e-commerce website built for a spice store where users
-           can view products, place orders, and manage their shopping cart. Backend manages user accounts and order
-            data. Benefits include customer convenience, order tracking, inventory management, and preserving cultural 
-            products.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Contact -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-container">
-    
-    <!-- Contact Form -->
-    <form id="contactForm" class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
 
-    <!-- Contact Info Box -->
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p><i class="fa-solid fa-envelope"></i> harshaneepriyangika20@gmail.com</p>
-      <p><i class="fa-solid fa-phone"></i> +94 70 185 5396</p>
-      <p><i class="fa-solid fa-location-dot"></i> Dambulla, Sri Lanka</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/harshani-dissanayke-1ab380362" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/HDissanayake" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-envelope"></i> harshaneepriyangika20@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +94 70 185 5396</p>
+        <p><i class="fa-solid fa-location-dot"></i> Dambulla, Sri Lanka</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/harshanee-dissanayake" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/HDissanayake" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
     </div>
-
-  </div>
-</section>
-
-  
-  
-
+  </section>
 
   <footer>
     <p>© 2025 Harshanee Disanayake | All Rights Reserved</p>
