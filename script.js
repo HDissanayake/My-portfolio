@@ -1,10 +1,8 @@
 // Typing animation effect
 // =========================
-<<<<<<< HEAD
+
 const roles = ["Associate QA Engineer", "QA Analyst"];
-=======
-const roles = ["Software Developer","Web Developer"];
->>>>>>> d1a7b93d7f6661feab83e8c025ebde12aca0c835
+
 let roleIndex = 0;
 let charIndex = 0;
 
