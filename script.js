@@ -1,7 +1,7 @@
 // Typing animation effect
 // =========================
 
-const roles = ["Associate QA Engineer", "QA Analyst"];
+const roles = ["QA Engineer", "QA Tester","QA Analyst"];
 
 let roleIndex = 0;
 let charIndex = 0;
