@@ -1,4 +1,4 @@
-## 🚀 Associate QA Engineer
+## 🚀 QA Engineer
 I am passionate about building and testing high-quality software. 
 
 ### 🛠 Tech Stack & Tools:
